@@ -1,0 +1,54 @@
+/* Navbar.css */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 20px;
+  background-color: #ECEAE2;
+  color: #090909;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.5s ease; /* Added color transition */
+}
+
+.navbar-logo {
+  color: #070707;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  color: #151414;
+}
+
+.free-trial {
+  font-size: 12px;
+  margin-right: 10px;
+}
+
+.extended-trial {
+  display: flex;
+  align-items: center;
+}
+
+.trial-image {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.trial-days-left {
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+.dropdown-arrow {
+  font-size: 18px;
+  cursor: pointer;
+}

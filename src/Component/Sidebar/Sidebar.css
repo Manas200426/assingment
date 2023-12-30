@@ -1,0 +1,112 @@
+/* Sidebar.css */
+.sidebar {
+    width: 200px;
+    height: 100%;
+    background: linear-gradient(to bottom, #ECEAE2, #ECEAE2); /* Gradient background with primary color */
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: width 0.3s ease, box-shadow 0.3s ease, background 0.5s ease; /* Added background transition */
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Updated box-shadow */
+    border-right: 2px solid #5c6f8c; /* Updated border color */
+    border-radius: 10px; /* Rounded corners */
+  }
+  
+  .collapsed {
+    width: 60px;
+  }
+  
+  .logo-container {
+    text-align: center;
+  }
+  
+  .logo {
+    max-width: 100%;
+    height: auto;
+    transition: max-width 0.3s ease;
+  }
+  
+  .collapsed-logo {
+    max-width: 40px;
+  }
+  
+  .limited-height-section {
+    overflow: hidden;
+  }
+  
+  .menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+  }
+  
+  .menu-item:hover {
+    background-color: #fdd7b0; /* Darker background on hover */
+    transform: translateX(5px); /* Add a subtle shift to the right on hover */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Updated shadow on hover */
+  }
+  
+  .menu-icon {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .line {
+    border: 1px solid #5c6f8c; /* Updated line color */
+    margin: 10px 0;
+  }
+  
+  .bottom-options,
+  .bottom-buttons {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .bottom-option,
+  .collapse-button {
+    display: block;
+    margin-bottom: 30px;
+  }
+  
+  .bottom-icon {
+    max-width: 100%;
+    height: auto;
+    font-size: 24px;
+  }
+  
+  .collapse-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #060606; /* Updated color */
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .icon {
+    margin-right: 5px;
+  }
+  
+  /* Add hover effect for active page */
+  .active-page {
+    background-color: #ffa74c; /* Darker background on hover for active page */
+    transform: translateX(5px); /* Shift to the right on hover for active page */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Shadow on hover for active page */
+  }
+  
+  /* Add transition for active page effect */
+  .menu-item.active-page {
+    transition: none;
+    background-color: #ffa74c; /* Darker background on hover for active page */
+    transform: translateX(5px); /* Shift to the right on hover for active page */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5); /* Shadow on hover for active page */
+  }
+  
+  
