@@ -5,7 +5,7 @@ import MyProject from './Pages/MyProject/MyProject';
 import SampleProject from './Pages/SampleProject/SampleProject';
 import Apps from './Pages/Apps';
 import Intro from './Pages/Intro';
-import './App.css';  // Import the main app styles if needed
+import './App.css';  
 import Sidebar from './Component/Sidebar/Sidebar';
 
 function App() {

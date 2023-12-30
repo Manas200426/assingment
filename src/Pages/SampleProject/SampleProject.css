@@ -1,4 +1,4 @@
-/* SampleProject.css */
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -51,22 +51,20 @@
   margin-bottom: 10px;
 }
 
-/* Highlight background for author, URL, and ID */
 .image-details p.author,
 .image-details p.url,
 .image-details p.id {
-  color: #f9bc43; /* Text color for highlighted items */
+  color: #f9bc43; 
 }
 
-/* Style the button container */
 .card-buttons-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 10px; /* Align buttons vertically center with images */
+  margin-top: 10px; 
 }
 
-/* Style the Delete button */
+
 .card-buttons-container button.delete {
   padding: 8px 16px;
   border: none;
@@ -82,7 +80,7 @@
   background-color: #c0392b;
 }
 
-/* Update Form Container Styles */
+
 .update-form-container {
   position: fixed;
   top: 50%;
@@ -93,7 +91,7 @@
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center; /* Center align the content */
+  text-align: center; 
 }
 
 .update-form-container label {

@@ -1,4 +1,4 @@
-// Sidebar.js
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
@@ -23,9 +23,9 @@ const Sidebar = ({ children }) => {
 
       {!isCollapsed && <hr className="line" />}
 
-      {/* Limited Height Section */}
+    
       <div className={`limited-height-section ${isCollapsed ? "collapsed" : ""}`}>
-        {/* Menu Items */}
+       
         {!isCollapsed && (
           <>
             <Link to="/" className="menu-item">
@@ -45,10 +45,8 @@ const Sidebar = ({ children }) => {
         )}
       </div>
 
-      {/* Gray Horizontal Line */}
-      {/* ... */}
+      
 
-      {/* Bottom Options */}
       <div className="bottom-options">
         {!isCollapsed && (
           <>
@@ -62,13 +60,13 @@ const Sidebar = ({ children }) => {
         )}
       </div>
 
-      {/* Button to toggle collapse */}
+
       <button className="collapse-button" onClick={toggleCollapse}>
         {isCollapsed ? <FiChevronRight className="icon" /> : <FiChevronLeft className="icon" />}
         <span>{isCollapsed ? "" : "Collapse"}</span>
       </button>
 
-      {/* Move Help and Support, Feedback, and Collapse Button to Bottom */}
+   
      
 
       <main>{children}</main>

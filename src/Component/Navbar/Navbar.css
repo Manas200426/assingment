@@ -1,4 +1,4 @@
-/* Navbar.css */
+
 .navbar {
   display: flex;
   align-items: center;
@@ -11,7 +11,7 @@
   position: fixed;
   top: 0;
   z-index: 1000;
-  transition: background-color 0.5s ease; /* Added color transition */
+  transition: background-color 0.5s ease;
 }
 
 .navbar-logo {

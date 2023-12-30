@@ -1,4 +1,4 @@
-// SampleProject.js
+
 import React, { useState, useEffect } from 'react';
 import './SampleProject.css';
 
@@ -7,7 +7,7 @@ const SampleProject = () => {
   const [selectedImage, setSelectedImage] = useState(null);
 
   useEffect(() => {
-    // Fetch data from the Picsum Photos API
+    
     fetch('https://picsum.photos/v2/list?page=1&limit=6')
       .then((response) => response.json())
       .then((data) => setImageData(data));
@@ -24,7 +24,7 @@ const SampleProject = () => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    // Implement logic to update the image data with the form values
+    
     const updatedData = imageData.map((image) =>
       image.id === selectedImage.id
         ? {
@@ -37,12 +37,12 @@ const SampleProject = () => {
         : image
     );
     setImageData(updatedData);
-    // Reset selected image state after updating
+    
     setSelectedImage(null);
   };
 
   const handleDelete = (id) => {
-    // Implement logic to delete the image data
+   
     const updatedData = imageData.filter((image) => image.id !== id);
     setImageData(updatedData);
   };

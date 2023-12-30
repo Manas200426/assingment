@@ -1,4 +1,4 @@
-// MyProject.js
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
@@ -23,7 +23,7 @@ const MyProject = () => {
     if (name === 'image' && files.length > 0) {
       setFormData((prevData) => ({
         ...prevData,
-        [name]: files[0], // Use the first selected file for simplicity
+        [name]: files[0], 
       }));
     } else {
       setFormData((prevData) => ({
@@ -37,7 +37,7 @@ const MyProject = () => {
     e.preventDefault();
 
     if (!formData.id) {
-      // ID is required, show error toast
+   
       toast.error('ID is required!', {
         position: 'top-right',
         autoClose: 3000,
@@ -49,7 +49,7 @@ const MyProject = () => {
     }
 
     if (isUpdate) {
-      // Update existing card
+    
       const updatedCards = cards.map((card) =>
         card.id === formData.id
           ? {
@@ -62,7 +62,7 @@ const MyProject = () => {
       );
       setCards(updatedCards);
 
-      // Show update toast
+  
       toast.info('Card updated!', {
         position: 'top-right',
         autoClose: 3000,
@@ -71,7 +71,7 @@ const MyProject = () => {
         pauseOnHover: true,
       });
 
-      // Reset form and update state
+
       setFormData({
         id: '',
         author: '',
@@ -80,7 +80,7 @@ const MyProject = () => {
       });
       setIsUpdate(false);
     } else {
-      // Create a new card
+
       const newCard = {
         id: formData.id,
         author: formData.author,
@@ -88,10 +88,10 @@ const MyProject = () => {
         description: formData.description,
       };
 
-      // Update the state to include the new card
+
       setCards((prevCards) => [...prevCards, newCard]);
 
-      // Show success toast
+
       toast.success('Card created successfully!', {
         position: 'top-right',
         autoClose: 3000,
@@ -100,7 +100,6 @@ const MyProject = () => {
         pauseOnHover: true,
       });
 
-      // Reset the form after submission
       setFormData({
         id: '',
         author: '',
@@ -128,7 +127,6 @@ const MyProject = () => {
     const updatedCards = cards.filter((card) => card.id !== id);
     setCards(updatedCards);
 
-    // Show delete toast
     toast.error('Card deleted!', {
       position: 'top-right',
       autoClose: 3000,
