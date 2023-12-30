@@ -2,33 +2,34 @@
 .navbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 8px 20px;
-  background-color: #ECEAE2;
-  color: #090909;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  justify-content: space-between; 
+  padding: 12px 24px;
+  background-color: #37474f; 
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   width: 100%;
   position: fixed;
   top: 0;
   z-index: 1000;
-  transition: background-color 0.5s ease;
+  transition: background-color 0.3s ease;
 }
 
 .navbar-logo {
-  color: #070707;
-  font-size: 18px;
+  color: #ffffff;
+  font-size: 24px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .navbar-content {
   display: flex;
   align-items: center;
-  color: #151414;
+  color: #ffffff;
 }
 
 .free-trial {
-  font-size: 12px;
-  margin-right: 10px;
+  font-size: 14px;
+  margin-right: 20px;
 }
 
 .extended-trial {
@@ -40,15 +41,21 @@
   width: 36px;
   height: 36px;
   border-radius: 50%;
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .trial-days-left {
-  font-size: 12px;
+  font-size: 14px;
   margin-right: 5px;
 }
 
 .dropdown-arrow {
-  font-size: 18px;
+  font-size: 20px;
   cursor: pointer;
+  transition: transform 0.3s ease; 
 }
+
+.dropdown-arrow:hover {
+  transform: scale(1.2); 
+}
+
